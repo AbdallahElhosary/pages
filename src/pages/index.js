@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import Link from 'next/link'
 
-const inter = Inter({ subsets: ['latin'] })
+
 
 export default function Home() {
   return (
@@ -15,7 +15,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       </Head>
-      
+      <Link
+        style={{display: "block",marginBottom: "20px"}}
+        href="/login">Login</Link>
+      <Link
+        style={{display: "block",marginBottom: "20px"}}
+        href="signup.html">Signup</Link>
+      <Link
+        style={{display: "block",marginBottom: "20px"}}
+        href="categories.html">Categories</Link>
+      <Link
+        style={{display: "block",marginBottom: "20px"}}
+        href="details.html">Details</Link>
     </>
   )
 }
